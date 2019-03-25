@@ -38,6 +38,10 @@
   to { transform: rotate(360deg); }
 } */
 
+.cursorPointer
+{
+  cursor: pointer;
+}
 .todo-input {
   width: 100%;
   padding: 10px 18px;

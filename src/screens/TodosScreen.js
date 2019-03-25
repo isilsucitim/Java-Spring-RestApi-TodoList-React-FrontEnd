@@ -30,10 +30,27 @@ class TodoScreen extends Component {
                     <thead>
                     <tr>
                         <th></th>
-                        <th>Todo</th>
-                        <th>Created Date</th>
-                        <th>Expires Date</th>
-                        <th>Status</th>
+                        <th
+                            className={classnames({'cursorPointer': true,'table-success':(TodoStore.sortElement==='title')})}
+                            onClick={()=>TodoStore.SortByElement('title')} >
+                            Todo
+                        </th>
+                        <th
+                            className={classnames({'cursorPointer': true,'table-success':(TodoStore.sortElement==='createDate')})}
+                            onClick={()=>TodoStore.SortByElement('createDate')}>
+                            Created Date
+                        </th>
+                        <th
+                            className={classnames({'cursorPointer': true,'table-success':(TodoStore.sortElement==='expires')})}
+                            onClick={()=>TodoStore.SortByElement('expires')}>
+                            Expires Date
+                        </th>
+                        <th
+                            className={classnames({'cursorPointer': true,'table-success':(TodoStore.sortElement==='completed')})}
+                            onClick={()=>TodoStore.SortByElement('completed')}>
+                            Status
+                        </th>
+
                         <th>Action</th>
                     </tr>
                     </thead>

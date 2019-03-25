@@ -28,7 +28,40 @@ class TodoStore {
     @observable userId = null;
     @observable listName = "";
     @observable userName = "";
+    @observable sirax = -1;
+    @observable sortElement = "";
 
+
+
+    // ACTION
+
+    @action SortByElement = element => {
+        this.sirax = this.sirax * -1;
+        this.sortElement = element;
+        this.todos = this.todos.sort(this.compareSort);
+    };
+
+
+
+
+    compareSort= (a, b)=>{
+
+        var genreA = a[this.sortElement];
+        var genreB = b[this.sortElement];
+
+        if (this.sortElement!=="completed"){
+            genreA = genreA.toUpperCase();
+            genreB = genreB.toUpperCase();
+        }
+
+        let comparison = 0;
+        if (genreA >= genreB) {
+            comparison = 1;
+        } else if (genreA < genreB) {
+            comparison = -1;
+        }
+        return comparison*this.sirax;
+    };
 
     @action SessionCheck = ()=>{
         if (localStorage.getItem('userId')!==null){
