@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import '../App.css';
 import '../bs.css';
 
-import TodoScreen from './TodosScreen'
-import TodoListScreen from './TodoListScreen'
-import UserLoginRegisterScreen from './UserLoginRegisterScreen'
+import TodoScreen from '../screens/TodosScreen'
+import TodoListScreen from '../screens/TodoListScreen'
+import UserLoginRegisterScreen from '../screens/UserLoginRegisterScreen'
 
 
 import {inject, observer} from 'mobx-react';

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../App.css';
-import TodoListItem from './TodoListItem';
+import TodoListItem from '../components/TodoListItem';
 
 
 import {inject, observer} from 'mobx-react';

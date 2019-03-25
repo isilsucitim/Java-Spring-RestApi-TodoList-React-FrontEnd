@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import '../App.css';
 
-import TodosRemaining from './TodosRemaining';
-
-import TodosCheckAll from './TodosCheckAll';
-import TodosFiltered from './TodosFiltered';
+import TodosRemaining from '../components/TodosRemaining';
+import TodosCheckAll from '../components/TodosCheckAll';
+import TodosFiltered from '../components/TodosFiltered';
 import * as classnames from 'classnames';
 
 import {inject, observer} from 'mobx-react';
@@ -69,12 +68,15 @@ class TodoScreen extends Component {
                                 }</td>
 
                                 <td>
-                                    {
-                                        todo.completed?" Completed ":""
-                                    }
-                                    {
-                                        (new Date(todo.expires)<new Date())&& !todo.completed?" Expires ":""
-                                    }
+                                    <span className="badge badge-success">{
+                                        todo.completed ? " Completed " : ""
+                                    }</span>
+
+
+                                    <span className="badge badge-danger">{
+                                        (new Date(todo.expires) < new Date()) && !todo.completed ? " Expires " : ""
+                                    }</span>
+
                                 </td>
 
 
