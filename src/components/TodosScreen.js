@@ -34,6 +34,7 @@ class TodoScreen extends Component {
                         <th>Todo</th>
                         <th>Created Date</th>
                         <th>Expires Date</th>
+                        <th>Status</th>
                         <th>Action</th>
                     </tr>
                     </thead>
@@ -66,6 +67,17 @@ class TodoScreen extends Component {
                                     todo.expires.split('T')[0]
 
                                 }</td>
+
+                                <td>
+                                    {
+                                        todo.completed?" Completed ":""
+                                    }
+                                    {
+                                        (new Date(todo.expires)<new Date())&& !todo.completed?" Expires ":""
+                                    }
+                                </td>
+
+
                                 <td>
                                     <button className="btn btn-danger btn-sm"
                                             onClick={(event) => TodoStore.deleteTodo(todo.id)}>
