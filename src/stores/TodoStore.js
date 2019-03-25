@@ -2,7 +2,7 @@ import React from 'react';
 import {observable, action, computed, configure, runInAction} from 'mobx';
 import axios from 'axios';
 axios.defaults.baseURL = 'http://localhost:8080/api';
-configure({enforceActions: true});
+configure({enforceActions: 'observed'});
 
 class TodoStore {
 

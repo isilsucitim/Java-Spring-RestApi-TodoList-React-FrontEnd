@@ -75,15 +75,19 @@ class TodoScreen extends Component {
 
                                     <span className="badge badge-danger">{
                                         (new Date(todo.expires) < new Date()) && !todo.completed ? " Expires " : ""
-                                    }</span>
+                                    }
+
+                                    </span>
 
                                 </td>
 
 
                                 <td>
+
                                     <button className="btn btn-danger btn-sm"
                                             onClick={(event) => TodoStore.deleteTodo(todo.id)}>
                                         Remove
+
                                     </button>
                                 </td>
                             </tr>
