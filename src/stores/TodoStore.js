@@ -16,16 +16,14 @@ class TodoStore {
 
 
     //
-    @observable isLoginRegister = true;
 
-
-    //
     @observable filter = 'all';
     @observable beforeEditCache = '';
     @observable todos = [];
     @observable todoLists = [];
     @observable todoListId = null;
     @observable userId = null;
+    @observable isLoginRegister = true;
     @observable listName = "";
     @observable userName = "";
     @observable sirax = -1;
@@ -42,22 +40,20 @@ class TodoStore {
     };
 
 
-
-
     compareSort= (a, b)=>{
 
-        var genreA = a[this.sortElement];
-        var genreB = b[this.sortElement];
+        var ElementA = a[this.sortElement];
+        var ElementB = b[this.sortElement];
 
         if (this.sortElement!=="completed"){
-            genreA = genreA.toUpperCase();
-            genreB = genreB.toUpperCase();
+            ElementA = ElementA.toUpperCase();
+            ElementB = ElementB.toUpperCase();
         }
 
         let comparison = 0;
-        if (genreA >= genreB) {
+        if (ElementA >= ElementB) {
             comparison = 1;
-        } else if (genreA < genreB) {
+        } else if (ElementA < ElementB) {
             comparison = -1;
         }
         return comparison*this.sirax;
