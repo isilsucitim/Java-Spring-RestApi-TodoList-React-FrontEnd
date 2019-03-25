@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d12502c-a709-461c-9749-76330638d1fc" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/LoginScreen.js" afterPath="$PROJECT_DIR$/src/screens/LoginScreen.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/RegisterScreen.js" afterPath="$PROJECT_DIR$/src/screens/RegisterScreen.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/TodoListScreen.js" afterPath="$PROJECT_DIR$/src/screens/TodoListScreen.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/TodosScreen.js" afterPath="$PROJECT_DIR$/src/screens/TodosScreen.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/UserLoginRegisterScreen.js" afterPath="$PROJECT_DIR$/src/screens/UserLoginRegisterScreen.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/App.js" afterPath="$PROJECT_DIR$/src/components/App.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -342,7 +336,7 @@
       <workItem from="1553342434779" duration="6830000" />
       <workItem from="1553426360608" duration="805000" />
       <workItem from="1553427437076" duration="14326000" />
-      <workItem from="1553502267487" duration="1502000" />
+      <workItem from="1553502267487" duration="1513000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Alpha">
       <created>1553503359180</created>
@@ -351,11 +345,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553503359180</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit Alpha">
+      <created>1553503792432</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1553503792432</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23463000" />
+    <option name="totallyTimeSpent" value="23474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
